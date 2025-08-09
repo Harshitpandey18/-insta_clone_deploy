@@ -2,10 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
+
 require('dotenv').config(); // Load env variables
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // ✅ MongoDB URI
 const MONGOURI = process.env.MONGO_URL || require('./config/key').MONGOURI;
